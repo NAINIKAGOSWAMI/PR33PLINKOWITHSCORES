@@ -5,6 +5,8 @@ var Engine = Matter.Engine,
  
 var particles = [];
 var plinkos = [];
+var divisions=[];
+
 
 var divisionHeight=300;
 var score =0;
@@ -63,10 +65,10 @@ function draw() {
      plinkos[i].display();
      
    }
-   if(frameCount%60===0){
-     particles.push(new particle(random(width/2-30, width/2+30), 10,10));
-     score++;
-   }
+  //  if(frameCount%60===0){
+  //    particles.push(new particle(random(width/2-30, width/2+30), 10,10));
+  //    score++;
+  //  }
  
   for (var j = 0; j < particles.length; j++) {
    
